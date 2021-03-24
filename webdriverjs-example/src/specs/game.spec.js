@@ -25,7 +25,6 @@ describe('Beating the game', function () {
   it('Should navigate to the site', async function () {
     this.timeout(20000);
     driver.get('http://zzzscore.com/1to50/en/');
-    //const grid = driver.findElement(By.id('grid'));
     const grid = await driver.findElement(By.id('grid'));
     await driver.wait(until.elementIsVisible(grid), 1000);
   });

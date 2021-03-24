@@ -4,7 +4,6 @@ describe('Beating the game', function () {
       $('#grid').waitForDisplayed();
     });
     it('Should tap on the grid until I beat the game', () => {
-      // Clickeo en los números en orden
       const grid = $('#grid');
       for (i = 1; i < 51; i++) {
         grid.$(`div=${i}`).click();
